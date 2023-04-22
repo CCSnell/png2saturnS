@@ -13,22 +13,22 @@ pub fn ctb_from_custom() -> Builder {
     let mt = "ELEGOO SATURN".to_ascii_uppercase().into_bytes();
     builder.machine_type(mt);
 
-    builder.printer_out_mm([192.0, 120.0, 200.0]);
+    builder.printer_out_mm([196.0, 122.0, 210.0]); ////Updated to Saturn S build volume
     builder.overall_height_mm(1.6);
     builder.layer_height_mm(1.6); // Arbitrary, maybe useful to specify different pcb thicknesses
     builder.exposure_s(42.0); // TODO optional parameter
-    builder.bot_exposure_s(10.0);
+    builder.bot_exposure_s(90.0);
     builder.light_off_time_s(5.0);
-    builder.resolution([3840, 2400]);
+    builder.resolution([3840, 2400]); //Updated to Saturn S screen size 4098 x 2560
     builder.pwm_level(255);
     builder.bot_pwm_level(255);
-    builder.bot_lift_dist_mm(5.0);
+    builder.bot_lift_dist_mm(0.0);
     builder.bot_lift_speed_mmpm(1200.0);
-    builder.lift_dist_mm(5.0);
+    builder.lift_dist_mm(0.0);
     builder.lift_speed_mmpm(1200.0);
-    builder.retract_speed_mmpm(120.0);
+    builder.retract_speed_mmpm(1200.0);
     builder.print_volume_ml(42.0);
-    builder.bot_light_off_time_s(5.0);
+    builder.bot_light_off_time_s(0.0);
 
     builder.bot_layer_count(1);
     builder.print_mass_g(42.0); // dummy value
