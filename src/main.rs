@@ -7,8 +7,8 @@ use png::{ColorType, Decoder};
 mod ctb_generator;
 use ctb_generator::*;
 
-const RESOLUTION_X: usize = 3840;
-const RESOLUTION_Y: usize = 2400;
+const RESOLUTION_X: usize = 4096; //Updated to Saturn S
+const RESOLUTION_Y: usize = 2560; //Updated to Saturn S
 
 #[derive(clap::ValueEnum, Clone)]
 enum Corner {
@@ -21,7 +21,7 @@ enum Corner {
 #[derive(Parser)]
 #[clap(author, version, about, long_about = None)]
 struct Cli {
-    /// PNG image input (has to be smaller or equal to 3840x2400)
+    /// PNG image input (has to be smaller or equal to 4096x2560)
     #[clap(value_parser, value_name = "INPUT")]
     png: PathBuf,
 
