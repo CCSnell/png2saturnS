@@ -19,7 +19,7 @@ pub fn ctb_from_custom() -> Builder {
     builder.exposure_s(42.0); // TODO optional parameter
     builder.bot_exposure_s(90.0);
     builder.light_off_time_s(5.0);
-    builder.resolution([3840, 2400]); //Updated to Saturn S screen size 4098 x 2560
+    builder.resolution([4098, 2560]); //Updated to Saturn S screen size 4098 x 2560
     builder.pwm_level(255);
     builder.bot_pwm_level(255);
     builder.bot_lift_dist_mm(0.0);
