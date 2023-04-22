@@ -7,7 +7,7 @@ use png::{ColorType, Decoder};
 mod ctb_generator;
 use ctb_generator::*;
 
-const RESOLUTION_X: usize = 4096; //Updated to Saturn S
+const RESOLUTION_X: usize = 4098; //Updated to Saturn S
 const RESOLUTION_Y: usize = 2560; //Updated to Saturn S
 
 #[derive(clap::ValueEnum, Clone)]
